@@ -16,6 +16,7 @@ required_id = ""
 for room in all_rooms :
     if room["title"]== room_name :
         required_id = room["id"]
+        break
 
 room_membership_endpoint = "https://webexapis.com/v1/memberships?roomId="+required_id
 
